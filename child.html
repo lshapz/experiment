@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+    html {
+      border: 1px solid black;
+    }
+    .unselectable {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="divHeader unselectable window-drag" >
+            <label id="labelHeader" class="window-drag"></label>
+            <button onclick="closeWindow();">CLOSE</button>
+            <button onclick="maximizeWindow();">MAX</button>
+            <button onclick="minimizeWindow();">MIN</button>
+        </div>
+<!--         <div class="divControls">
+            <button onclick="sendToLocal()">Local</button>
+            <input id="textMessage" type="text" placeholder="Enter message to send..."/>
+            <button onclick="sendToServer()">All</button>
+            <div>
+                <button onclick="sendToServer('Chrome')">Chrome</button>
+                <button onclick="sendToServer('Edge')">Edge</button>
+                <button onclick="sendToServer('Electron')">Electron</button>
+                <button onclick="sendToServer('Firefox')">FireFox</button>
+                <button onclick="sendToServer('IE')">IE</button>
+                <button onclick="sendToServer('OpenFin')">OpenFin</button>
+            </div>
+        </div> -->
+        <div class="divTextArea">
+            <textarea id="logOutput"></textarea>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="windowmanager.js"></script>
+    <script type="text/javascript" src="child.js"></script>
+</body>
+</html>
