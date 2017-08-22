@@ -5,8 +5,10 @@ Questions That Still Need Answering as of 8/22/17
 * 	docking
 
  a) why do snake and youtube dock and undock sometimes when dragging them around?
+ 	ANSWERED because you need need to dock both to each other (snake.dock(youtube) && youtube.dock(snake))
 	
  b) why doesn't child.html dock at all? 
+ 	ANSWERED-ish - it will dock to one at time or both based on proximity but if you select the one to which it is not docked it will undock itself - the docking groups are not kept in sync??
 
 *	can I create a deployment build (github pages or whatever) that works with the windowmanager.js server fetch method? 
 
