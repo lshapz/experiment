@@ -13,7 +13,7 @@ function createWindow (){
 
 function createYoutube(){
 	// can we have an argument that's a youtube URL or search? 
-	youtube = new windowmanager.Window({url: "embed.html", width: 580, height: 600, frame: false, left: 350, top: 300})
+	youtube = new windowmanager.Window({url: "youtube.html", width: 580, height: 600, frame: false, left: 350, top: 300})
 	console.log(youtube)
 	var srcs = windowmanager.Window.getAll().map(item=>{return {src: item._window.src, window: item}})
 	
@@ -29,12 +29,12 @@ function createYoutube(){
 
 
 function createSnake(){
-	snake = new windowmanager.Window({url: "snake.html", width: 600, height: 600, frame: false, left: 931, top: 225})
+	snake = new windowmanager.Window({url: "snake.html", width: 600, height: 600, frame: false, left: 930, top: 225})
 	console.log(snake)
 	var srcs = windowmanager.Window.getAll().map(item=>{return {src: item._window.src, window: item}})
 	
-	var tube = srcs.filter(item=>{return item.src}).filter(item=>{return item.src.includes('embed')})[0].window
-	snake.dock(tube)
+	var youtube = srcs.filter(item=>{return item.src}).filter(item=>{return item.src.includes('youtube')})[0].window
+	snake.dock(youtube)
 	// debugger
 /*	child.onReady(()=>{
 		child.focus()
