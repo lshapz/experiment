@@ -11,8 +11,39 @@
                 <button onclick="createWindow()">Create Window</button>
                 <button onclick="createYoutube()">Create Youtube</button>
                 <button onclick="createSnake()">Create Snake</button>
-
+<div id="counter">
+<buttons></buttons>
+</div>
     	<script type="text/javascript" src="windowmanager.js"></script>
         <script type="text/javascript" src="index.js"></script>
+         <script src="https://unpkg.com/vue@2.4.2"></script>
+<script>
+
+Vue.component('buttons', {
+	name: 'buttons',
+	template: `<div><p>{{number}}</p>
+	<p><button @click.prevent="addOne">Add One</button></p>
+	<p><button @click.prevent="minusOne">Minus One</button></p></div>
+	`,
+	data: function(){
+		return {
+			number: 0
+		}
+	},
+	methods: {
+		addOne: function(){
+			this.number += 1
+		},
+		minusOne: function(){
+			this.number -= 1
+		}
+	}
+})
+
+new Vue({
+	el: "#counter"
+})
+
+</script>
 </body>
 </html>

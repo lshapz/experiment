@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "child.html",
+			"settings":
+			{
+				"buffer_size": 897,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "vue",
+		"selected_items":
+		[
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/laurashapiro/REPOS/experiment",
+		"/Users/laurashapiro/REPOS/experiment/public"
+	],
+	"file_history":
+	[
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/assets/component3.html",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/component.html",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/component2.vue",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/main.js",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/component2.html",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/App.vue",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/src/component1.vue",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/style.css",
+		"/Users/laurashapiro/REPOS/vuetrial/fourth/index.html",
+		"/Users/laurashapiro/.ssh/config",
+		"/Users/laurashapiro/REPOS/vuetrial/take3/cat.html",
+		"/Users/laurashapiro/REPOS/vuetrial/vueapp01/src/App.vue",
+		"/Users/laurashapiro/REPOS/vuetrial/vueapp01/src/components/Hello.vue",
+		"/Users/laurashapiro/REPOS/vuetrial/vueapp01/src/main.js",
+		"/Users/laurashapiro/REPOS/vuetrial/vueapp01/README.md",
+		"/Users/laurashapiro/REPOS/.bashrc",
+		"/Users/laurashapiro/.bashrc",
+		"/Users/laurashapiro/.bash_profile",
+		"/Users/laurashapiro/bash_history",
+		"/Users/laurashapiro/.bash_history",
+		"/Users/laurashapiro/.bash_sessions/F9BB60C1-D7DB-446B-AAA0-19C87E5FB818.historynew",
+		"/Users/laurashapiro/bash"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hello",
+			"component1",
+			"component",
+			"    \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "child.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "experimenting.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"read",
+				"README.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
