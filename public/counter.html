@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+    html {
+      border: 1px solid black;
+    }
+    </style>
+</head>
+<body class="window-drag">
+<div id="counter" class="window-drag">
+<buttons></buttons>
+</div>
+    <script src="https://unpkg.com/vue@2.4.2"></script>
+    <script type="text/javascript" src="windowmanager.js"></script>
+
+<script>
+
+Vue.component('buttons', {
+	name: 'buttons',
+	template: `<div class="window-drag"><p class="window-drag">{{number}}</p>
+	<p class="window-drag"><button @click.prevent="addOne">Add One</button></p>
+	<p class="window-drag"><button @click.prevent="minusOne">Minus One</button></p></div>
+	`,
+	data: function(){
+		return {
+			number: 0
+		}
+	},
+	methods: {
+		addOne: function(){
+			this.number += 1
+		},
+		minusOne: function(){
+			this.number -= 1
+		}
+	}
+})
+
+new Vue({
+	el: "#counter"
+})
+
+</script>
+</body>
+</html>
+
+

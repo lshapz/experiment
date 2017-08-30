@@ -1,4 +1,4 @@
-let child, snake, youtube
+let child, snake, youtube, counter
 var count = 0
 
 function createWindow (){ 
@@ -22,6 +22,21 @@ function createYoutube(){
 		snake.dock(youtube)
 	}
 }
+
+function createCounter(){
+	counter = new windowmanager.Window({url: "counter.html", width: 100, height: 150, frame: false, top: 500})
+	console.log(counter)
+
+	var srcs = windowmanager.Window.getAll().map(item=>{return {src: item._window.src, window: item}})
+	var youtube = srcs.filter(item=>{return item.src}).filter(item=>{return item.src.includes('youtube')})[0].window
+	if (youtube) {
+		var neighbor = youtube.getPosition()
+		counter.moveTo(neighbor.left - 100, neighbor.top+100)
+		counter.dock(youtube)
+		youtube.dock(counter)
+	}
+}
+
 
 
 
