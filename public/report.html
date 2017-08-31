@@ -6,26 +6,19 @@
     html {
       border: 1px solid black;
     }
+
     </style>
 </head>
 <body class="window-drag">
 <div id="reporter" class="window-drag">
-    <select v-model="selected">
-                <option v-for="option in reports" :value="option.value">
-                	{{option.value}}
-               </option>
-     </select>
-
-     <div v-if="reportToShow" style="text-align:center;">
+     <div v-if="reportToShow" style="text-align:center;" class="window-drag">
      	<h1>{{reportToShow.text}}</h1>
-     	<img :src="reportToShow.image" style="width:100%;max-width:600px;">
+     	<img :src="reportToShow.image" style="width:100%;max-width:500px;">
      </div>
 
 </div>
-
     <script src="https://unpkg.com/vue@2.4.2"></script>
     <script type="text/javascript" src="windowmanager.js"></script>
-
 <script>
 
 new Vue({
@@ -36,11 +29,11 @@ new Vue({
 			{value: "report2", text: 'this is the second report', image: 'http://www.rescueghanamission.org/wp-content/uploads/2017/04/bao-cao.jpg'},
 			{value: "report3", text: 'this is the third report', image: 'http://www.q4blog.com/wp-content/uploads/2015/10/1099-r.png'},
 		],
-		selected: 'report1'
+		selected: ''
 	},
 	computed: {
 		reportToShow: function(){
-			var selected = this.selected
+			var selected = windowmanager.Window.getCurrent().getTitle()
 			return this.reports.filter(function(item) {
 				return item.value === selected})[0]
 		}

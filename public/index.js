@@ -8,8 +8,19 @@ function createWindow (){
 
 }
 
+// function dockToNeighbors(){
+// 	windowmanager.Window.getAll()
+// }
+
 function createReport(){
-	report = new windowmanager.Window({url: "report.html", width: 900, height: 900, frame: false, title: event.target.value})
+	var children = windowmanager.Window.getAll()
+		.filter(win=>{ return (win._window.src) })
+		.filter(child=>{return child._window.src.includes('report')})
+	children.forEach(child=>{
+		child.close()
+	})
+	report = new windowmanager.Window({url: "report.html", width: 600, height: 600, frame: false })
+	report.setTitle(event.target.value)
 
 }
 
