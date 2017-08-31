@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+    html {
+      border: 1px solid black;
+    }
+    </style>
+</head>
+<body class="window-drag">
+<div id="reporter" class="window-drag">
+    <select v-model="selected">
+                <option v-for="option in reports" :value="option.value">
+                	{{option.value}}
+               </option>
+     </select>
+
+     <div v-if="reportToShow" style="text-align:center;">
+     	<h1>{{reportToShow.text}}</h1>
+     	<img :src="reportToShow.image" style="width:100%;max-width:600px;">
+     </div>
+
+</div>
+
+    <script src="https://unpkg.com/vue@2.4.2"></script>
+    <script type="text/javascript" src="windowmanager.js"></script>
+
+<script>
+
+new Vue({
+	el: "#reporter", 
+	data: {
+		reports: [
+			{value: "report1", text: 'this is the first report', image: 'http://1.bp.blogspot.com/-nzm908Pfunw/VqXgeRNp4LI/AAAAAAAACJI/wgeVntLSIT8/s1600/status-report.png'},
+			{value: "report2", text: 'this is the second report', image: 'http://www.rescueghanamission.org/wp-content/uploads/2017/04/bao-cao.jpg'},
+			{value: "report3", text: 'this is the third report', image: 'http://www.q4blog.com/wp-content/uploads/2015/10/1099-r.png'},
+		],
+		selected: 'report1'
+	},
+	computed: {
+		reportToShow: function(){
+			var selected = this.selected
+			return this.reports.filter(function(item) {
+				return item.value === selected})[0]
+		}
+	}
+})
+
+</script>
+</body>
+</html>
+
+
